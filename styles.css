@@ -17,6 +17,11 @@ body {
     border: rgb(255, 196, 0) 1px solid;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
+  @media(max-width: 600px){
+    .container{
+      margin:0;
+    }
+  }
   
   /* make the div with the id lists into a flex container */
   .lists {
@@ -33,9 +38,11 @@ body {
   }
   
   input {
-    width: 300px;
+    width: 200px;
     padding: 1em;
   }
+
+ 
   
   /* make list containers flex */
   .lists div {
@@ -56,7 +63,18 @@ body {
     box-shadow: 2px 2px 4px gray;
     padding: 5px 8px;
   }
-  
+  @media only screen and (max-width: 800px){
+    .toDoItem, .doneItem{
+      margin:1rem;
+      padding: 1rem;
+    }
+    .completed, .todo{
+     font-size: 19px;
+    }
+    button{
+      margin-top: 10px;
+    }
+  }
   /* Style list item specific to toDoItem */
   .toDoItem {
     background: #45A29E;
